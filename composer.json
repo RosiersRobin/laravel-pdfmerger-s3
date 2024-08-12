@@ -1,5 +1,5 @@
 {
-    "name": "got-daijobu/laravel-pdfmerger-s3",
+    "name": "rosiersrobin/laravel-pdfmerger-s3",
     "type": "library",
     "description": "Webklex Package with S3 support - thanks to nipunTharuksha",
     "keywords": [
@@ -23,6 +23,10 @@
         {
             "name": "Daijobu.ai",
             "email": "hello@daijobu.ai"
+        },
+        {
+            "name": "RosiersRobin",
+            "email": "rosiers.me"
         }
     ],
     "require": {
