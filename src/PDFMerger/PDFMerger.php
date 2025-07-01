@@ -10,7 +10,7 @@
 *  -
 */
 
-namespace Webklex\PDFMerger;
+namespace Rosiersrobin\PDFMerger;
 
 use Illuminate\Support\Carbon;
 use setasign\Fpdi\Fpdi as FPDI;

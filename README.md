@@ -23,12 +23,12 @@ Add the service provider to the providers array in `config/app.php`.
 ``` php
 'providers' => [
     ...
-    Webklex\PDFMerger\Providers\PDFMergerServiceProvider::class
+    Rosiersrobin\PDFMerger\Providers\PDFMergerServiceProvider::class
 ],
 
 'aliases' => [
     ...
-    'PDFMerger' => Webklex\PDFMerger\Facades\PDFMergerFacade::class
+    'PDFMerger' => Rosiersrobin\PDFMerger\Facades\PDFMergerFacade::class
 ]
 ```
 
@@ -36,12 +36,12 @@ Add the service provider to the providers array in `config/app.php`.
 A basic usage example:
 
 ``` php
-use Webklex\PDFMerger\Facades\PDFMergerFacade as PDFMerger;
+use Rosiersrobin\PDFMerger\Facades\PDFMergerFacade as PDFMerger;
 
 $oMerger = PDFMerger::init();
 
-$oMerger->addPDF('/path/to/project/vendors/webklex/laravel-pdfmerger/src/PDFMerger/examples/pdf_one.pdf', [2]);
-$oMerger->addPDF('/path/to/project/vendors/webklex/laravel-pdfmerger/src/PDFMerger/examples/pdf_two.pdf', 'all');
+$oMerger->addPDF('/path/to/project/vendors/Rosiersrobin/laravel-pdfmerger/src/PDFMerger/examples/pdf_one.pdf', [2]);
+$oMerger->addPDF('/path/to/project/vendors/Rosiersrobin/laravel-pdfmerger/src/PDFMerger/examples/pdf_two.pdf', 'all');
 
 $oMerger->merge();
 $oMerger->save('merged_result.pdf');
@@ -51,7 +51,7 @@ $oMerger->save('merged_result.pdf');
 ...add raw content data:
 
 ``` php
-$oMerger->addString(file_get_contents('/path/to/project/vendors/webklex/laravel-pdfmerger/src/PDFMerger/examples/pdf_two.pdf'), [1]);
+$oMerger->addString(file_get_contents('/path/to/project/vendors/Rosiersrobin/laravel-pdfmerger/src/PDFMerger/examples/pdf_two.pdf'), [1]);
 
 ```
 
